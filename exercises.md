@@ -1,5 +1,3 @@
-# ES - základní kontrukce
-
 # ES - Advent of Code - Day 1
 
 https://adventofcode.com/2021/day/1
@@ -28,6 +26,63 @@ computeIncreases([
 // vrátí 7
 
 ```
+# ES - transformace dat
+
+Implementujte funkci `createPerson` se dvěma sargumenty:
+- `input` - (objekt) - objekt reprezentující informace o uživateli
+- `otherData` - (objekt)  - free form objekt, který chceme přidat do návratového objektu
+
+Funkce transformuje `input` a `otherData` do jednoho objektu, který vrátí.
+
+## Ukázka transformace
+
+```js
+const createPerson = (input, otherData) =>  {
+  // TODO,
+}
+
+const uglyInput = {
+  personData: {
+    firstName: "Darth",
+    lastName: "Vader",
+  },
+  metadata: { created: "2022-1-1" },
+  unsortedHobbies: ["c", "a", "b"]
+};
+
+const otherData = {
+	movie: "Star Wars",
+	url: "https://en.wikipedia.org/wiki/Darth_Vader"
+}
+
+const result = createPerson(uglyInput, otherData)
+
+console.log(result);
+/* logs:
+{
+	firstName: "Darth",
+	lastName: "Vader",
+	fullName: "Darth Vader",
+	sortedHobbies: ["a", "b", "c"],
+	movie: "Star Wars",
+	url: "https://en.wikipedia.org/wiki/Darth_Vader"
+}
+*/
+```
+
+## Využijte:
+
+- krátkou formu arrow
+- argumentovou destrukturalizaci
+- template literal pro tvorbu `fullName`
+- `sortedHobbies` jsou seřazena, podle abecedy
+- `...` spread operátor ke sloučení s `otherData`.
+
+Hint:
+ Najdi, jak řadit pole
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
 
 ---
 

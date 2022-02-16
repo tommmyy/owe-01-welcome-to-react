@@ -1,4 +1,5 @@
 const Section = () => "section";
+
 const ExerciseSection = () => (
   <div>
     <Section />
