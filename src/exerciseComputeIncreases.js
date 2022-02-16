@@ -1,6 +1,7 @@
-const computeIncreases = numbers => {
+function computeIncreases(numbers) {
   /* TODO */
-};
+  return 0;
+}
 
 const result = computeIncreases([
   199, //(N/A - no previous measurement)
