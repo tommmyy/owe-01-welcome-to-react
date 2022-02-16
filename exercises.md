@@ -1,3 +1,36 @@
+# ES - základní kontrukce
+
+# ES - Advent of Code - Day 1
+
+https://adventofcode.com/2021/day/1
+
+Zkráceně:
+
+- Funkce dostane pole čísel
+- Funkce projde čísla od začátku do konce a porovná vždy po sobě jdoucí čísla.
+- Funkce vrátí počet případů, kdy je následující číslo větší než předchozí .
+
+```js
+const computeIncreases = (numbers) => {/* TODO */}
+
+computeIncreases([
+	199, //(N/A - no previous measurement)
+	200, //(increased)
+	208, //(increased)
+	210, //(increased)
+	200, //(decreased)
+	207, //(increased)
+	240, //(increased)
+	269, //(increased)
+	260, //(decreased)
+	263, //(increased)
+])
+// vrátí 7
+
+```
+
+---
+
 # První komponenta - Section
 
 Vytvořte komponentu Section.
